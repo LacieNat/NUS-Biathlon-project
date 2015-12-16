@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0089)https://cheetah.vodien.com:2083/frontend/x3/ftp/instructions/filezilla.html?acct=biathlon -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>cPanel X</title>
+
+
+<link rel="shortcut icon" href="https://cheetah.vodien.com:2083/cPanel_magic_revision_1261078175/frontend/x3/branding/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./cPanel X_files/combined_optimized.css">
+<style type="text/css">.spriteui_img{margin:0;padding:0;background:url("/cPanel_magic_revision_58235113302.8257/branding/x3/ui_sprites_img_skip_filetype_gif.jpg");}  #ui-aqua-hd-lt{background-position:0 -1px;width:7px;height:22px;}#ui-aqua-hd-rt{background-position:0 -25px;width:7px;height:22px;}
+
+.spriteui_img_trans{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif");} #ui-accept{background-position:0 -0px;width:16px;height:16px;}#ui-collapse{background-position:0 -16px;width:14px;height:14px;}#ui-expand{background-position:0 -30px;width:14px;height:14px;}#ui-getstart-icon{background-position:0 -44px;width:72px;height:72px;}#ui-homeb{background-position:0 -116px;width:20px;height:19px;}#ui-reject{background-position:0 -135px;width:16px;height:16px;}#ui-start32{background-position:0 -151px;width:32px;height:32px;}#ui-stop32{background-position:0 -183px;width:32px;height:32px;}#ui-x3-hd-close{background-position:0 -215px;width:16px;height:16px;}#ui-x3-hd-closehover{background-position:0 -231px;width:16px;height:16px;}
+
+.spriteui_bg{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_89184639574.6952/branding/x3/ui_sprites_bg_snap_to_smallest_width.png");}#ui-aqua-hd-bg{background-position:0 -0px;width:18px;height:22px;}#ui-button-bg{background-position:0 -322px;width:1px;height:22px;}#ui-button-bg-over{background-position:0 -644px;width:1px;height:22px;}#ui-tbl-bg{background-position:0 -966px;width:18px;height:22px;}#ui-tbl-bg-over{background-position:0 -1288px;width:509px;height:21px;}#ui-bg{background-position:0 -1609px;width:6px;height:640px;}
+
+.spriteheading_compleximg{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_45665023023.0606/branding/x3/heading_sprites_compleximg.jpg") no-repeat;}#heading-top-billboard{background-position:0 -1px;width:742px;height:145px;}
+
+.spriteheading_img{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_38876755234.3736/branding/x3/heading_sprites_img.png");}#heading-help_off{background-position:0 -0px;width:35px;height:37px;}#heading-help_on{background-position:0 -37px;width:35px;height:37px;}#heading-home_off{background-position:0 -74px;width:35px;height:37px;}#heading-home_on{background-position:0 -111px;width:35px;height:37px;}#heading-logout_off{background-position:0 -148px;width:35px;height:37px;}#heading-logout_on{background-position:0 -185px;width:35px;height:37px;}
+
+.spriteheading_bg{position:relative;top:0px;left:0px;margin:0;padding:0;background:url("/cPanel_magic_revision_97164866262.2148/branding/x3/heading_sprites_bg_snap_to_smallest_width.png") repeat-x;}#heading-bottom_bg{background-position:0 -0px;height:23px;}#heading-top-header-bg{background-position:0 -323px;height:145px;}
+
+.box-expand-control{cursor:pointer;cursor:hand;background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -30px;width:14px;height:14px;}
+
+.box-collapse-control{cursor:pointer;cursor:hand;background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -16px;width:14px;height:14px;}
+
+.create-button, .input-button{background-image:url("/cPanel_magic_revision_89184639574.6952/branding/x3/ui_sprites_bg_snap_to_smallest_width.png"); background-repeat: repeat-x;}.create-button, .input-button{ background-position:0 -322px;height:22px; }
+
+.create-button:hover, .input-button:hover{background-image:url("/cPanel_magic_revision_89184639574.6952/branding/x3/ui_sprites_bg_snap_to_smallest_width.png"); background-repeat: repeat-x;}.create-button:hover, .input-button:hover{ background-position:0 -644px;height:22px; }
+
+body{background-image:url("/cPanel_magic_revision_89184639574.6952/branding/x3/ui_sprites_bg_snap_to_smallest_width.png"); background-repeat: repeat-x;}body{ background-position:0 -1609px;}
+
+h3, h6, #notices h6, #quota-warnings h6, #content-stats h6{background:url("/cPanel_magic_revision_89184639574.6952/branding/x3/ui_sprites_bg_snap_to_smallest_width.png") bottom repeat-x;}h3, h6, #notices h6, #quota-warnings h6, #content-stats h6{background-position:0 -966px;}
+ 
+.yui-panel .tl,.yui-panel .lt,.panel .tl,.panel .lt {background: url("/cPanel_magic_revision_58235113302.8257/branding/x3/ui_sprites_img_skip_filetype_gif.jpg") repeat;background-position:0 -1px;width:7px;height:22px;}
+.yui-panel .tr,.yui-panel .rt,.panel .tr,.panel .rt {background: url("/cPanel_magic_revision_58235113302.8257/branding/x3/ui_sprites_img_skip_filetype_gif.jpg") repeat;background-position:0 -25px;width:7px;height:22px;}
+.yui-panel .container-close:hover,.panel .close:hover,.panel .close.secure:hover,.panel .close.nonsecure:hover {background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -231px;width:16px;height:16px;}
+.yui-panel .container-close,.panel .close,.panel .close.secure,.panel .close.nonsecure {background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -215px;width:16px;height:16px;}
+.fm-panel .container-close:hover,.panel .close:hover,.panel .close.secure:hover,.panel .close.nonsecure:hover {background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif") repeat;}
+.fm-panel .container-close,.panel .close,.panel .close.secure,.panel .close.nonsecure {background:url("/cPanel_magic_revision_10147629820.2781/branding/x3/ui_sprites_img_only_filetype_gif.gif") repeat;}
+</style>
+<!-- BEGIN cpanel_parsed_css.html -->
+<style type="text/css">
+.smclearbr{line-height:1px;height:1px;}.cellheading,h3,h6,#notices h6,#quota-warnings h6,#content-stats h6{background:url("/cPanel_magic_revision_1182767081/frontend/x3/branding/tbl-bg.jpg") repeat-x bottom;}.sortable th,.nonsortable th, .dynamic_table th{background-image:url("/cPanel_magic_revision_1182767081/frontend/x3/branding/tbl-bg.jpg");background-repeat:repeat-x;}h6:hover,h6.sfhover{background:url("/cPanel_magic_revision_1182767041/frontend/x3/branding/tbl-bg-over.jpg") repeat-x bottom;}.pass_bar_base,.pass_barbig_base,.progress_bar_base,.progress_barbig_base{background-image:url("/cPanel_magic_revision_1201447639/frontend/x3/branding/progress-bar-effx.png");background-repeat:repeat-x;}.accept{background:url("/cPanel_magic_revision_1201447640/frontend/x3/branding/accept.gif") no-repeat;width:16px;height:16px;}.reject{background:url("/cPanel_magic_revision_1201447640/frontend/x3/branding/reject.gif") no-repeat;width:16px;height:16px;}#ui-getstart-icon{background-position:0 0;background-image:url("/cPanel_magic_revision_1182767082/frontend/x3/branding/getstart-icon.gif");width:72px;height:72px;}.mainpopbg{background:url("/cPanel_magic_revision_1182766581/frontend/x3/images/getstart-bg.jpg") no-repeat bottom right #e4eff2;}.yui-panel .bd p.validation_msg,.panel .bd 
+p.validation_msg,.validation_msg{background:url("/cPanel_magic_revision_1201447640/frontend/x3/branding/reject.gif") no-repeat left top;}
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">
+.progress_bar_base, .progress_barbig_base {background-image:none;}
+</style>
+<![endif]-->
+<!-- END cpanel_parsed_css.html -->
+
+
+<style type="text/css">
+/* css2 */
+
+
+
+
+/* end css2 */
+</style>
+<link href="./cPanel X_files/local_vps.css" rel="stylesheet" type="text/css">
+<!--[if gt IE 6]>
+<style type="text/css">
+	.ls_fieldset legend{margin-top:20px}#footer ul{list-style:none;margin:0;padding:0;text-align:center}#cpanel #border-efx #content{width:100%}.sortable{margin-left:-10px}#cpanel #border-efx #content #sub{width:218px;min-height:300px;#cpanel #border-efx #content{float:left;margin:5px 0 0 12px;padding:0}#cpanel #border-efx #content #main{width:500px;float:right;min-height:300px;margin:0 15px 0 0;padding:0}.input-button{height:23px;vertical-align:bottom;margin-left:2px}.input-button:hover{height:23px;color:#014d5f;vertical-align:bottom;margin-left:2px}#optionselect-content{height:287px;padding:15px}.formbox h4{margin:5px 0 3px 0}#backup-nav ol li a:hover{cursor:hand}.or_spacer{position:relative;top:-9px}#ife-create-legend ul{margin:10px 0 10px 0}#ife-create-form fieldset{background:#fff}toptop .ife-module{padding:0 15px}#clearspambox{margin-right:30px}#ftptbl{margin-left:-27px}.yui-panel .bd p.validation_msg,.panel .bd p.validation_msg,.validation_msg{margin:0}.search-panel{height:28px;margin-bottom:0;text-align:left;width:100%}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="/cPanel_magic_revision_1349120344/frontend/x3/css/ie6-min.css" />
+<style type="text/css">
+.input-button{
+    background:url(/cPanel_magic_revision_1182767003/frontend/x3/branding/button-bg.gif) repeat-x center;
+}
+</style>
+<![endif]-->
+
+
+
+<!-- START stdmheader.html -->
+
+<style type="text/css"></style></head>
+<body id="cpanel_body" class="yui-skin-sam">
+<div id="cpanel">
+
+    <div id="border-efx">
+    <!--Handheld heading-->
+    
+    <!--Start Header-->
+    <div id="heading-top-header-bg" class="spriteheading_bg">
+	<div id="heading-top-billboard" class="spriteheading_compleximg">  
+	    <div id="leftheader">
+        
+		<div class="spriteheading_img" id="heading-home_off" onmouseover="this.id=&#39;heading-home_on&#39;;" onmouseout="this.id=&#39;heading-home_off&#39;;" style="cursor:pointer;cursor:hand;height:35px;display:inline">
+		    <a style="display:block; width: 100%; height: 100%; text-decoration:none" target="_top" href="https://cheetah.vodien.com:2083/frontend/x3/index.html">&nbsp;</a>
+		</div>
+        
+	    </div>
+	
+	    <div id="rightheader" style="float:right;">
+        
+		    <div class="spriteheading_img" id="heading-help_off" onmouseover="this.id=&#39;heading-help_on&#39;;" onmouseout="this.id=&#39;heading-help_off&#39;;" style="cursor:pointer;cursor:hand;height:35px;display:inline">
+			<a onclick="show_help(); return false;" style="display: block; height: 100%; width: 100%; text-decoration:none" target="_blank" href="https://cheetah.vodien.com:2083/frontend/x3/help.html?url=/frontend/x3/ftp/instructions/filezilla.html">&nbsp;</a>
+		    </div>
+		
+		<div class="spriteheading_img" id="heading-logout_off" onmouseover="this.id=&#39;heading-logout_on&#39;;" onmouseout="this.id=&#39;heading-logout_off&#39;;" style="cursor:pointer;cursor:hand;height:35px;display:inline">
+		    <a style="display: block; width: 100%; height: 100%; text-decoration:none" target="_top" href="https://cheetah.vodien.com:2083/logout/?locale=en">&nbsp;</a>
+		</div>
+	    </div>
+	
+	    <!--This div will display logo when media-type=handheld-->
+	    <div id="handheld-head">cPanel 11</div>
+	    
+	    <div id="logo">
+		
+		<img id="logo-top-logo" alt="" src="./cPanel X_files/top-logo.gif" class="toplogo">
+		
+	    </div>
+	</div>
+    </div>
+    <!--End Header-->
+    <div class="clearitsm">&nbsp;</div>
+    <!--Start Content-->
+    <div id="content">
+    <!-- END stdmheader.html -->
+
+<script type="text/javascript" src="./cPanel X_files/utilities_container.js"></script>
+<script type="text/javascript" src="./cPanel X_files/x3_optimized.js"></script>
+<script type="text/javascript" src="./cPanel X_files/cpanel-all-min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+// i18n for the CJT
+CPANEL.lang.close="close";CPANEL.lang.Close="Close";CPANEL.lang.cancel="cancel";CPANEL.lang.unlimited="unlimited";CPANEL.lang.or="or";CPANEL.lang.ajax_loading="loading...";CPANEL.lang.password_generator="Password Generator";CPANEL.lang.generate_password="Generate Password";CPANEL.lang.advanced="Advanced Options";CPANEL.lang.confirm_copy_password="I have copied this password in a safe place.";CPANEL.lang.use_password="Use Password";CPANEL.lang.length="Length";CPANEL.lang.alpha_characters="Alpha Characters";CPANEL.lang.nonalpha_characters="Non Alpha Characters";CPANEL.lang.both="Both";CPANEL.lang.lowercase="Lowercase";CPANEL.lang.uppercase="Uppercase";CPANEL.lang.numbers="Numbers";CPANEL.lang.symbols="Symbols";CPANEL.lang.password_strength="Password Strength";CPANEL.lang.passwords_match="Passwords Match";CPANEL.lang.password_validator_strength="Password strength must be at least";CPANEL.lang.password_validator_no_spaces="Password cannot have spaces.";CPANEL.lang.password_validator_no_empty="Password cannot be empty.";CPANEL.lang.password_validator_no_match="Passwords do not match.";CPANEL.lang.Validation_Errors="Validation Errors";CPANEL.lang.strength_phrase_very_weak="Very Weak";CPANEL.lang.strength_phrase_weak="Weak";CPANEL.lang.strength_phrase_ok="OK";CPANEL.lang.strength_phrase_strong="Strong";CPANEL.lang.strength_phrase_very_strong="Very Strong";CPANEL.lang.click_to_close="click to close";CPANEL.lang.toggle_more="more &raquo;";CPANEL.lang.toggle_less="less &raquo;";CPANEL.lang.Error="Error";CPANEL.lang.json_error="Error";CPANEL.lang.json_parse_failed="JSON parse failed.";CPANEL.lang.ajax_error="AJAX Error";CPANEL.lang.ajax_try_again="Please refresh the page and try again.";CPANEL.lang.Search="Search";CPANEL.lang.Simple_Search="Simple Search";CPANEL.lang.Advanced_Search="Advanced Search";CPANEL.lang.add_search_field="add search field";CPANEL.lang.remove="remove";CPANEL.lang.No_Results_Found="No Results Found";CPANEL.lang.Go_to="Go to";CPANEL.lang.Show_rows="Show rows";CPANEL.lang.contains="contains";CPANEL.lang.equals="equals";CPANEL.lang.More="More";CPANEL.lang.ajax_error_with_image=CPANEL.icons.error+" "+this.ajax_error+": "+this.ajax_try_again;CPANEL.lang.json_error_with_image=CPANEL.icons.error+" "+this.json_error+": "+this.ajax_try_again;
+// NVData
+var NVData={};
+NVData.icFAA=unescape('%7b%22addondomain%22%3a4%2c%22redirects%22%3a7%2c%22parkeddomains%22%3a3%2c%22image-manager%22%3a2%2c%22php%22%3a1%2c%22optimizews%22%3a1%2c%22updatecontact%22%3a3%2c%22filemanager%22%3a89%2c%22legacy_filemanager%22%3a1%2c%22hd%22%3a2%2c%22backup-wizard%22%3a5%2c%22hdspace%22%3a2%2c%22subdomains%22%3a16%2c%22zoneedit%22%3a20%2c%22ftpaccounts%22%3a10%2c%22manageaccounts%22%3a58%2c%22webemail%22%3a4%2c%22emailmx%22%3a4%2c%22forwardersemail%22%3a15%2c%22mysql%22%3a3%2c%22mysql-wizard3%22%3a1%2c%22mysql-remoteaccess%22%3a4%2c%22dfiltering%22%3a1%2c%22csvimport%22%3a3%7d');
+//]]>
+</script>
+<!-- END stdheader.html -->
+
+
+<style type="text/css">
+    .step_number {
+        width: 40px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 13pt;
+        background-color: #DDDDDD;
+        border-radius: 10px;
+    }
+    .step {
+        min-height: 100px;
+        color: #666666; 
+        font-family: helvetica, arial;
+        font-size: 11pt;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .step h2 {
+        font-weight: bold;
+        font-family: helvetica, arial;
+        font-size: 13pt;
+        margin-left: 0px;
+        display: inline;
+    }
+    .round {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 90px;
+        width: 26px;
+        background-color: #04586c;
+        color: white;
+        font-family: helvetica, arial;
+        border: 2px solid #aaaaaa;
+        font-weight: bold;
+        font-size: 15pt;
+    }
+    .heading {
+        font-family: helvetica, arial;
+        font-size: 16pt;
+        color: #04586c;
+    }
+    td {
+        border-bottom: 1px solid #dddddd;
+    }
+    .hidden_screen {
+        display: none;
+        max-width: 99%;
+        padding-top: 10px;
+    }
+    .toggle_link {
+        text-decoration: underline;
+        font-size: 9pt;
+        font-family: helvetica, arial;
+        cursor: pointer;
+         
+    }
+</style>
+
+<script type="text/javascript">
+    YAHOO.util.Event.onDOMReady( function () {
+        elements = YAHOO.util.Dom.getElementsByClassName('toggle_link');
+        for (var i=0; i<elements.length; i++) {
+            YAHOO.util.Event.on(elements[i],'click', function () {
+                if (document.getElementById(this.id+'_img').style.display==='block') {
+                    CPANEL.animate.slide_up(this.id+'_img');
+                } else {
+                    CPANEL.animate.slide_down(this.id+'_img');
+                }
+            });
+        }
+    });
+</script>
+
+
+
+<div class="body-content">
+<div class="heading">FileZilla Instructions</div>
+<hr color="#04586c">
+<p>When configuring FileZilla, you will download an XML file and import it to your FileZilla client.
+To configure the FileZilla FTP client:</p>
+<p>
+
+</p><table width="100%">
+    <tbody><tr>
+        <td class="step_number"><div class="round">1</div></td>
+        <td class="step"><h2>Step One</h2><br>
+            Click the <em>Configure FTP Client</em> link that corresponds to the FTP account you wish to use to connect to your FTP server.
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">2</div></td>
+        <td class="step"><h2>Step Two</h2>&nbsp;&nbsp;<span id="ss1" class="toggle_link"><img src="./cPanel X_files/screenshot.png" alt="Toggle Screenshot"></span><br>
+            Click the FTP or SFTP link to download the XML file. We recommend that you use SFTP whenever possible, as it is generally more secure than FTP.
+            <font color="#C45145">Note: This step will over-write any previous XML configuration file without warning.</font>
+            <img src="./cPanel X_files/filezilla-ss1.png" class="hidden_screen" id="ss1_img">
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">3</div></td>
+        <td class="step"><h2>Step Three</h2><br>
+            Open your FileZilla FTP client.
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">4</div></td>
+        <td class="step"><h2>Step Four</h2>&nbsp;&nbsp;<span id="ss2" class="toggle_link"><img src="./cPanel X_files/screenshot.png" alt="Toggle Screenshot"></span><br>
+            Select the <em>Import</em> option from the <em>File</em> menu (File ⇀ Import).
+            <img src="./cPanel X_files/filezilla-ss2.png" class="hidden_screen" id="ss2_img">
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">5</div></td>
+        <td class="step"><h2>Step Five</h2><br>
+            Select the XML file you have just downloaded and click <em>OK</em>.
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">6</div></td>
+        <td class="step"><h2>Step Six</h2><br>
+            Click the <em>OK</em> button on the resulting <em>Import Settings</em> window.
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">7</div></td>
+        <td class="step"><h2>Step Seven</h2><br>
+            Click <em>OK</em> on the resulting <em>Import Successful</em> window.
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">8</div></td>
+        <td class="step"><h2>Step Eight</h2><br>
+            To open a connection to your FTP server, select the <em>Site Manager</em> feature from the <em>File</em> menu (File ⇀ Site Manager).
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">9</div></td>
+        <td class="step"><h2>Step Nine</h2><br>
+            Select your domain from the <em>Select Entry</em> menu.
+        </td>
+    </tr>
+    <tr>
+        <td class="step_number"><div class="round">10</div></td>
+        <td class="step"><h2>Step Ten</h2><br>
+            Click the <em>Connect</em> button to connect to your FTP server.
+        </td>
+    </tr>
+</tbody></table>
+<br><br>
+<p>Note: Third party products are subject to change due to circumstances beyond cPanel's control, potentially rendering these instructions invalid. If this occurs, you can always consult the product manual for the correct procedure.</p>
+<br><br><br>
+<div class="return-link"><a href="javascript:window.close();">Close This Window</a></div>
+<br><br><br>
+</div>
+<!-- START stdfooter.html -->
+<div class="clearitmed">&nbsp;</div>
+</div><!--Close Content Div-->
+ 
+
+
+<!--Start Footer-->
+		<div id="heading-bottom_bg" class="spriteheading_bg footer">
+			<ul class="links footer_ul">
+				<li class="footer_li"><a class="footer_li_a bottomlink" href="https://cheetah.vodien.com:2083/frontend/x3/index.html">Home</a></li>
+				<li class="footer_li"><span class="footer" style="font-size:18px;">▪</span></li>
+				<li class="footer_li"><a class="footer_li_a" href="https://cheetah.vodien.com:2083/frontend/x3/trademarks.html" target="_blank">Trademarks</a></li>
+				
+				<li class="footer_li"><span class="footer" style="font-size:18px;">▪</span></li>
+                <li class="footer_li"><a onclick="show_help(); return false;" target="_blank" href="https://cheetah.vodien.com:2083/frontend/x3/help.html?url=/frontend/x3/ftp/instructions/filezilla.html" class="bottomlink footer_li_a">Help</a></li>
+                
+				<li class="footer_li"><span style="font-size:18px;">▪</span></li>
+				<li class="footer_li"><a href="http://www.cpanel.net/docs/cpanel/index.cgi?build=11.32.7.3&basetheme=x3&theme=x3" target="_blank" class="bottomlink footer_li_a">Documentation</a></li>
+				<li class="footer_li"><span style="font-size:18px;">▪</span></li>
+            
+                <li class="footer_li"><a href="https://cheetah.vodien.com:2083/frontend/x3/contact/contactinfo.html" class="bottomlink footer_li_a" target="_blank">Contact</a></li>
+                <li class="footer_li"><span style="font-size:18px;">▪</span></li>
+            
+				<li class="footer_li"><a href="https://cheetah.vodien.com:2083/logout/?locale=en" class="bottomlink footer_li_a">Logout</a></li>
+			</ul>
+		</div>
+		<!--End Footer-->
+	</div><!--Close border-efx div-->
+</div><!--Close cpanel div-->
+
+<!-- Start Help Code -->
+<div style="display:none;" id="win">
+	<div class="hd">
+		<div class="lt"></div>
+		<span>Interface Help</span>
+		<div class="rt"></div>
+	</div>
+
+	<div class="bd">
+		<div class="content" id="help-content" style="height:400px;">
+			﻿
+  <h2>Configure the <span class="caps">FTP</span> client</h2>
+<p>This screen tells you how to configure the <span class="caps">FTP</span> client.</p>
+<p>1. Follow the instructions on the screen.<br>
+2. When you are finished, click <em>Close This Window</em>.</p>
+
+			<div id="helplinks">
+				<h2>Help Links:</h2>
+				<ul>
+					<li><a href="http://www.cpanel.net/docs/cpanel/index.cgi?build=11.32.7.3&basetheme=x3&theme=x3" target="_blank" class="bottomlink">Full Interface Documentation</a></li>
+					<li><a href="https://cheetah.vodien.com:2083/frontend/x3/tutorial.html" target="_blank">Video Tutorials</a></li>
+					
+					<li>
+			        <a href="https://cheetah.vodien.com:2083/frontend/x3/contact/contactinfo.html" target="_blank">Contact Customer Support</a>
+			        </li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Help Code -->
+<!-- Begin js2 auto include -->
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<!-- End js2 auto include -->
+
+
+<!-- END stdfooter.html -->
+
+<!-- cPanel [11.32] (pro,vps,attracta,vps) Copyright (c) 2012 cPanel, Inc. Licensed on cheetah.vodien.com -->
+</body></html>

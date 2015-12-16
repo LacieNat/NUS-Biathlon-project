@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<script src="js/typeface-0.15.js"></script>
+<script src="js/optimer_font/optimer_regular.typeface.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	$("#leftBar").localScroll({ target: "#rightBar", queue: true, duration: 1000});
+	$(".answer").hide();
+	$(".faq").click(function(){
+		$(this).next('.answer').slideToggle(500);
+	});
+
+});
+
+</script>
+
+<style>
+
+#leftBar {
+position: fixed;
+top: 0px;
+left: 0px;
+bottom: 0px;
+width: 340px;
+border-right: 2px white;
+box-shadow: 3px 3px 15px #888888;
+background-color: white;
+}
+
+#logo {
+position: absolute;
+width: 300px;
+top: 50px;
+left: 10px;
+}
+
+.navigation {
+position: relative;
+top: 310px;
+width: 320px;
+height: 50px;
+}
+
+.innerNav {
+text-align: right;
+text-transform: uppercase;
+font-family: Trebuchet MS;
+font-weight: bold;
+letter-spacing: 1pt;
+color: #2E2E2E;
+}
+
+#rightBar {
+position: absolute;
+right: 0px;
+top: 0px;
+left: 310px;
+max-height: 100%;
+overflow-y: auto;
+overflow-x: hidden;
+z-index:-2;
+}
+
+#swim{
+position: relative;
+height: 680px;
+z-index: -1;
+}
+
+#homeContent {
+position: absolute;
+bottom: 20px;
+right: 10px;
+font-family: lucida console;
+font-size: 15px;
+
+}
+
+#raceTitle{
+top: 50px;
+color: white;
+font-size: 38px;
+padding-left: 350px;
+}
+
+#registerContent {
+font-family: optimer;
+font-size: 50px;
+text-align: center;
+padding-top: 60px;
+color: #2E2E2E;
+letter-spacing: 0.7pt;
+}
+
+#poster {
+height: 400px;
+position: relative;
+margin-left: 150px;
+margin-top: 80px;
+}
+
+#registerContentTwo, #runnerContent, #galleryContent {
+position: relative;
+background-color: #F2F2F2;
+font-family: optimer;
+height: 550px;
+width: 1400px;
+}
+
+#contactContent {
+color: white;
+padding-left: 100px;
+}
+
+#raceContent{
+color: white;
+padding-left: 450px;
+}
+
+#sponsorContent{
+position: relative;
+background-color: white;
+font-family: optimer;
+width: 800px;
+padding-left: 100px;
+color: #084B8A;
+}
+
+#registerText{
+position: absolute;
+top: 80px;
+left: 500px;
+width: 500px;
+height: 300px;
+background: transparent;
+}
+
+#runnerContent, #galleryContent, #contactContent{
+padding-left: 400px;
+}
+
+a:link {
+color: black;
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+color: black;
+}
+
+a:hover {
+color: #6E6E6E;
+}
+
+a.signUp:link {
+color: blue;
+text-decoration: none;
+}
+
+hr{
+width: 90%;
+margin-left: 70px;
+}
+
+ul li{
+cursor: pointer;
+}
+
+.answer {
+padding-left: 50px;
+color: #585858;
+}
+
+#run {
+position: relative;
+height: 200px;
+}
+
+#soManyNames{
+height: 500px;
+font-family: optimer;
+background-image: url(images/blackgradient.jpg);
+}
+
+#notAgain{
+background-image: url(images/bluegradient.jpg);
+font-family: optimer;
+height: 945px;
+}
+
+#credit{
+color: white;
+font-family: arial;
+}
+
+#me:visited {
+color: white;
+}
+
+#me {
+color: white;
+font-family: arial;
+}
+
+
+</style>
+
+</head>
+<body>
+<div id="leftBar">
+<img id="logo" src="images/2014logo.jpg" alt="NUS Biathlon"/>
+	<div class="navigation">		
+		<div id="home" class="innerNav"><a href="#nav1">Home</a></div>
+	</div>
+	<div class="navigation">		
+		<div id="registration" class="innerNav"><a href="#nav2">Registration</a></div>
+	</div>
+	<div class="navigation">		
+		<div id="route" class="innerNav"><a href="#nav3">Race & Route Details</a></div>
+	</div>
+	<div class="navigation">		
+		<div id="sponsors" class="innerNav"><a href="#nav6">FAQs</a></div>
+	</div>
+	<div class="navigation">		
+		<div id="contact" class="innerNav"><a href="#nav7">About Us</a></div>
+	</div>
+</div>
+
+<div id="rightBar">
+	<div class="content" id="nav1">
+		<img id="swim" src="images/swimming.jpg"/>
+		<div id="homeContent">Brought to you by: <img src="images/scbanner.png" style="height: 60px;"/></div>
+	</div>
+	<div class="content" id="nav2">
+		<div class="typeface-js" id="registerContent">Have you signed up yet?</div><br>
+		<hr>
+		<div id="registerContentTwo" class="typeface-js">
+			<img id="poster" src="images/poster.jpg"/>
+			<div id="registerText">
+				Thank you for visiting the NUS Biathlon website. <br><br><br><br>To register for our event, click the following links: <br><br>
+				<a class="signUp" href="https://docs.google.com/forms/d/1wcITo2s4m6R3nyo3nYgfjVDCyBnG8_vCbeWkNMfgi4Q/viewform">Open Category (16 Swim Laps and 5KM Run)</a>
+				<br><br>
+				<a class="signUp" href="https://docs.google.com/forms/d/1wcITo2s4m6R3nyo3nYgfjVDCyBnG8_vCbeWkNMfgi4Q/viewform">Novice Category (8 Swim Laps and 3KM Run)</a>
+				<br><br>
+				<a class="signUp" href="https://docs.google.com/forms/d/1zoRFGzihyKW77hIYqwq-uPe44NHkWZW1_P8v7ugWebg/viewform">Mixed Relay Category (1 MALE and 1 FEMALE pair. Each will either take 8 Swim Laps or 3KM Run.)</a>
+				<br><br>
+				<a class="signUp" href="https://docs.google.com/forms/d/1NGoiyYAhGUylDYB2uhVyYaHPQmF_gPnaZl7MArWt0VQ/viewform">Volunteer Recruitment</a>
+				<br><br><br>
+				For rules and regulations, click the following: <br><br>
+				<a class="signUp" href="http://biathlon.nussportsclub.org/css/testb2014/files/Rules&Regulations.pdf"> Rules and Regulations </a>
+			</div>
+		</div>
+	</div>
+	<div class="content" id="nav3">
+
+		<img id="run" src="images/runblur.jpg"/>
+		<div id="soManyNames" class="typeface-js">
+		<div id="raceTitle"> Race and Route Details</div>
+		<div id="raceContent" class="typeface-js"><br>
+			Site under maintenance
+		</div>
+		</div>
+	</div>
+
+	<div class="content" id="nav6">
+		<div class="typeface-js" id="registerContent">FAQs</div>
+		
+		<div id="sponsorContent" class="typeface-js"><br>
+		<div id="credit"> YO TOOK YOU SO LONG TO FIND ME. LACIE MADE THIS WOOHAHA. BOW DOWN TO THE QUEEN </div>
+			<ul>
+				<li class="faq">When will NUS Biathlon 2014 be held?</li>
+				<div class="answer"> 30 March 2014, Sunday! You will receive the reporting time for your respective wave nearing the event date.<br><br></div>
+				<li class="faq">Where will NUS Biathlon 2014 be held? (eg. Reporting venue, routes, valuables storage)</li>
+				<div class="answer">The swim and run at the will be around the Kent Ridge campus and Utown. The route will be confirmed soon! Look out for it on Facebook or on the NUS Biathlon website.<br><br></div>
+				<li class="faq">What is the minimum age requirement to participate?</li>
+				<div class="answer"> The minimum age requirement is 16 years old. NUS Biathlon 2014 is open only to tertiary and polytechnic institutions. However, if you do not fall in this category, you can always participate in NUS Biathlon 2014 as a volunteer (see Q5)!<br><br></div>
+				<li class="faq">How can I register?</li>
+				<div class="answer">Please sign up for a category at the respective link. A confirmation email containing an indemnity form, health declaration form and swimming proficiency form will be sent out to you shortly after.<br><br></div>
+				
+				<li class="faq">How can I volunteer for NUS Biathlon?</li>
+				<div class="answer"> Sign up <a href="https://docs.google.com/forms/d/1NGoiyYAhGUylDYB2uhVyYaHPQmF_gPnaZl7MArWt0VQ/viewform" >here</a>. A light breakfast and volunteer tee will be provided on the event day. Volunteers will be allocated roles as road marshals, water point helper, ushers, logistics/stage crew, or timekeeper.<br><br></div>
+				<li class="faq">Is my place in the NUS Biathlon 2014 guaranteed after registration?</li>
+				<div class="answer">No, you can only secure that spot after payment is made to us in cash at either the NUS Sports Club Room at the Sports and Recreational Centre Level 2 on 13/2/14-16/2/14 or our booth at Science faculty LT27/28/29 foyer on 17/2/14-19/2/14<br><br></div>
+				<li class="faq">Can other forms of payment be made? I cannot make it down to the payment booths on the stated dates.</li>
+				<div class="answer"> Unfortunately we accept only cash. If you are unable to make it down on those dates, do inform us at enquiries@biathlon.nussportsclub.org so we can make alternative arrangements to suit your schedule.<br><br> </div>
+				<li class="faq">What is the Mixed category?</li>
+				<div class="answer">Mixed category comprises a team of 1 male and 1 female. Each individual of the pair would choose among themselves as to who swims and who runs.<br><br> </div>
+			
+				<li class="faq">What is the attire for NUS Biathlon 2014?</li>
+				<div class="answer"> Each participant will be given a Race Singlet to be worn during the running leg of the race. An event tee will also be provided as dry attire post-race. If participants wish to wear full body swimsuit, do ensure that the arms are exposed for tagging purposes. Note: No bikinis/mankinis are allowed. Participants should also not have loose accessories or watches on during the swim.<br><br></div>
+				<li class="faq">How will medals be awarded?</li>
+				<div class="answer">No finisher medals will be awarded. However, fret not! The top 10 of each category will receive medals to recognise their achievement.<br><br></div>
+				<li class="faq">What is counted as a penalty?</li>
+				<div class="answer">Please refer to the Rules and Regulations of NUS Biathlon 2014. Any breach of these rules and regulations can be penalised. <br><br></div>
+				<li class="faq">What happens if it rains?</li>
+				<div class="answer">The organising committee of NUS Biathlon 2014 will determine if it is safe to continue. CAT-1 weather status renders an immediate halt of the race. Delays are expected, and the affected wave will be cancelled with no refunds after the cut-off time, which is to be decided by the organising committee of NUS Biathlon 2014. <br><br>There is no wet weather route as NUS Biathlon has traditionally been held outdoors. Alternatively, you may enjoy some refreshments and entertainment in the MPSH nearby. <br><br></div>
+				
+				<li class="faq">What happens if I&#39m late? Can I join a later wave?</li>
+				<div class="answer"> No participants will be disqualified and no timing will be provided if they do not run in their respective wave. There is always NUS Biathlon 2015!<br><br></div>
+				<li class="faq">Can my friend take over my slot if I am unable to make it after payment? We have the same T-shirt size.</li>
+				<div class="answer">No. In the interest of the runners well-being and safety, the Organiser strictly prohibits and strongly discourages the sale, exchange and transfer of race entries. This is because race tag numbers contain the registered runner’s medical information and emergency contacts, which is important for the medical teams to provide immediate medical assistance should an accident occur. <br><br></div>
+				<li class="faq">Can I change my race category after payment? Eg. Change from Open to novice</li>
+				<div class="answer">Please refer to point above. Race entry is non-transferable, non-refundable and non-changeable.<br><br> </div>
+				<li class="faq">What if I am injured during the race or otherwise unable to finish the race?</li>
+				<div class="answer">First aid stations will be located along the routes. Medical assistance will provided to injured participants.<br><br> </div>
+				
+				<li class="faq">Why hasn&#39t NUS Biathlon 2014 replied to my email enquiry?</li>
+				<div class="answer"> Our admin will revert to your enquiry within 3 working days. Please check your junk mail if you have not heard from us. Otherwise, we would appreciate it if you could send us your enquiry again!<br><br></div>
+				<li class="faq">How will I know my timing?</li>
+				<div class="answer"> Only the top fastest few will be announced on the day itself. For your individual timing, do refer back to <a href="http://www.facebook.com/biathlonus">our Facebook Page</a> or <a href="http://biathlon.nussportsclub.org/">our Biathlon website</a> for your race results after 6 April 2014, Sunday.<br><br></div>
+
+				<li class="faq">Can I dive from the edge of the pool at the start? </li>
+				<div class="answer"> All participants are to be in the water at the start line for the swim. Diving at the starting position is strictly not allowed. This is for the safety of the other participant sharing the lane with you.<br><br></div>
+			<br><br>
+			</ul>
+			<div style="font: arial; color: white;"> <a id="me" href="https://www.facebook.com/lacie.yuxin">CLICK ME CLICK ME</a></div>
+		</div>
+	</div>
+	<div class="content" id="nav7">
+		<div id="notAgain" class="typeface-js">
+		<div style="position: relative; top: 100px; left: 100px; width: 800px; color: white; text-align:justify;"> NUS Biathlon is back!<br><br>Organized by the NUS Students' Sports Club, this annual event is one of the main highlights on the NUS sporting scene.<br><br>NUS Biathlon provides an opportunity for everyone whether you're an NUS staff, student or a member of the public. If you're a trained athlete wanting to compete or a newcomer simply looking for a challenge, you're more than welcomed to join us!<br><br><b><u>National University of Singapore(NUS) Students’ Sports Club</b></u><br><br> 
+The National University of Singapore Students’ Sports Club (NUSSSC) is one of the most active student-run
+organization in the campus. Dedicated to providing the NUS population with a wide array of sporting
+activities and a channel to enrich their campus lives, we cater to the recreational sporting needs of the NUS
+community. <br><br>
+From the club’s roots in 1979, 2014 marks the 34th year of our club and is currently being led by the 34th
+Management Committee. Being the largest and most active non-faculty constituent club in NUS; our
+objective is to promote a healthy lifestyle and community bonding through recreational sports. Our club now
+boasts a family of 27 member clubs, classified accordingly into Martial Arts, Indoor, Land and Sports. In line
+with our vision of encouraging the NUS community in their pursuits of sporting interests, NUSSSC
+also spearheads a number of major Sports Club events such as NUS Biathlon, SunNUS, NUS Sports
+Camp and RunNUS.<br><br> Find out more about <a href="http:\\nussportsclub.org"><u>NUS Students’ Sports Club</u></a></div>
+
+		<div style="border-radius: 5px; position: relative; top: 150px; left: 20px; right: 0px; color: white; background-color: rgba(0,0,0,0.3); width: 100%; height: 350px;">
+			<span style="font-size: 25px; font-weight: bold; padding-left: 100px; padding-top: 40px; float: left;">Meet the Team<br><br><img style="height: 100px;" src="images/team.JPG"/></span>
+			<span style="font-size: 25px; font-weight: bold; padding-left: 40px; padding-top: 40px; float: left;">Contact Us<br><br><span style="font-size: 15px; float: left;">NUS Biathlon<br>Sports and Recreation Centre<br>2 Sports Drive 1<br>Singapore 117561</span><br><br><br><span style="float: left;"><a href="http://www.facebook.com/biathlonus"><img style="height: 60px;" src="images/fb.png"/></a></span><span style="float: left;"><a href="mailto:enquiry@biathlon.nussportsclub.org"><img style="height: 40px; margin-top: 15px;" src="images/mail.png"/></a></span></span>
+			<span style="font-size: 25px; font-weight: bold; padding-left: 40px; padding-top: 40px; float: left;">Organizer<br><br><a href="http:\\nussportsclub.org"><img src="images/scbanner.png" style="height: 60px;"/></a></span>
+			<span style="font-size: 25px; font-weight: bold; padding-left: 40px; padding-top: 40px; float: left;">Other Events<br><br><a href="http://sunnus.nussportsclub.org"><img style="height: 100px;" src="images/sunnus.png"/></a><br><br><a style="color: white; font-size: 15px;" href="http://sportscamp.nussportsclub.org">NUS Sports Camp</a><br><br><a style="color: white; font-size: 15px;" href="http://runnus.nus.edu.sg">RunNUS</a><br><br></span>
+
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
